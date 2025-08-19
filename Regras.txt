@@ -1,0 +1,58 @@
+REGRAS OFICIAIS DO JOGO DE DAMAS
+
+1. TABULEIRO E PEÇAS
+   - Tabuleiro 8x8 com 64 casas (alternando cores claras e escuras)
+   - 12 peças para cada jogador (normalmente pretas e brancas)
+   - Jogam apenas nas casas escuras
+   - Peças posicionadas nas primeiras 3 fileiras de cada lado
+
+2. MOVIMENTAÇÃO BÁSICA
+   - Peças comuns movem-se apenas para frente na diagonal
+   - Apenas 1 casa por movimento (exceto capturas)
+   - Movimento obrigatoriamente diagonal
+   - Não pode haver peças da mesma cor
+   - Peça de tipo diferente são comidas
+   
+3. CAPTURA DE PEÇAS
+   - Captura saltando sobre peça adversária na diagonal
+   - Deve haver casa vazia imediatamente após a peça adversária
+   - Captura obrigatória: se possível capturar, deve capturar
+   - Múltiplas capturas em sequência são permitidas
+   - Peças capturadas são removidas do tabuleiro
+
+4. DAMAS (PEÇAS COROADAS)
+   - Quando peça alcança a última fileira do adversário, vira dama
+   - Dama move-se qualquer número de casas na diagonal (frente e trás)
+   - Dama pode capturar peças a qualquer distância na diagonal
+   - Deve parar imediatamente após a peça capturada
+
+5. REGRAS ESPECIAIS DE CAPTURA
+   - Se múltiplas capturas forem possíveis, deve escolher a que captura mais peças
+   - Captura em sequência deve continuar com a mesma peça
+   - Não pode saltar sobre a mesma peça duas vezes no mesmo movimento
+
+6. VITÓRIA E EMPATE
+   - Vitória por capturar todas as peças adversárias
+   - Vitória por deixar adversário sem movimentos válidos
+   - Empate por acordo entre jogadores
+   - Empate se repetir a mesma posição 3 vezes
+   - Empate se não houver captura em 20 lances consecutivos
+
+7. REGRAS GERAIS
+   - Jogador com peças claras (brancas) inicia o jogo
+   - Turnos alternados entre jogadores
+   - Movimento obrigatório: se pode mover, deve mover
+   - Peça tocada deve ser movida (regra do "tocado-movido")
+
+8. OBSERVAÇÕES IMPORTANTES
+   - Não é permitido movimento para trás com peças comuns
+   - Dama tem mobilidade total nas diagonais
+   - Captura tem prioridade sobre movimento simples
+   - Deve completar sequência de captura até o final
+
+9. FIM DE JOGO
+   - Partida termina quando um jogador não pode mover
+   - Partida termina quando um jogador perde todas as peças
+   - Partida pode terminar em empate por repetição ou acordo
+
+VERSÃO: Regras internacionais padrão
