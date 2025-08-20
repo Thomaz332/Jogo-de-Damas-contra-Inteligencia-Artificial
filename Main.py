@@ -71,9 +71,69 @@ class JogoDeDamas:
             return True
         return False
     
+    def verificar_vitoria(self):
+        # Verifica se algum jogador não tem mais peças
+        pecas_pretas = any(1 in linha or 3 in linha for linha in self.tabuleiro)
+        pecas_brancas = any(2 in linha or 4 in linha for linha in self.tabuleiro)
+        
+        if not pecas_pretas:
+            return 2  # Brancas venceram
+        if not pecas_brancas:
+            return 1  # Pretas venceram
+        
+        return 0  # Jogo continua
+    
+    def verificar_vitoria(self):
+        # Verifica se algum jogador não tem mais peças
+        pecas_pretas = any(1 in linha or 3 in linha for linha in self.tabuleiro)
+        pecas_brancas = any(2 in linha or 4 in linha for linha in self.tabuleiro)
+        
+        if not pecas_pretas:
+            return 2  # Brancas venceram
+        if not pecas_brancas:
+            return 1  # Pretas venceram
+        
+        return 0  # Jogo continua
+    
+    def jogar(self):
+        print("Bem-vindo ao Jogo de Damas!")
+        print("Peças pretas (p) jogam primeiro, depois peças brancas (b)")
+        print("Para fazer um movimento, digite as coordenadas no formato: linha_origem coluna_origem linha_destino coluna_destino")
+        print("Exemplo: 5 0 4 1")
+        
+        while self.verificar_vitoria() == 0:
+            self.imprimir_tabuleiro()
+            jogador = "Pretas (p)" if self.jogador_atual == 1 else "Brancas (b)"
+            print(f"Vez do jogador: {jogador}")
+            
+            try:
+                entrada = input("Digite seu movimento: ").split()
+                if len(entrada) != 4:
+                    print("Por favor, digite 4 números separados por espaço.")
+                    continue
+                
+                linha_origem, coluna_origem, linha_destino, coluna_destino = map(int, entrada)
+                
+                if self.fazer_movimento(linha_origem, coluna_origem, linha_destino, coluna_destino):
+                    print("Movimento realizado com sucesso!")
+                else:
+                    print("Movimento inválido. Tente novamente.")
+            except ValueError:
+                print("Por favor, digite apenas números.")
+            except KeyboardInterrupt:
+                print("\nJogo interrompido.")
+                break
+        
+        vencedor = self.verificar_vitoria()
+        self.imprimir_tabuleiro()
+        if vencedor == 1:
+            print("Parabéns! As peças pretas venceram!")
+        elif vencedor == 2:
+            print("Parabéns! As peças brancas venceram!")
+    
 # Iniciar o jogo
 if __name__ == "__main__":
 
     jogo = JogoDeDamas()
-    print(jogo.fazer_movimento(5,0,4,1))
-    jogo.imprimir_tabuleiro()
+
+    jogo.jogar()
